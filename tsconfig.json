@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "esnext",
+        "sourceMap": true,
+        "declarationMap": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "esModuleInterop": true,
+        "downlevelIteration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "declaration": true,
+        "baseUrl": ".",
+        "jsx": "react",
+        "paths": {
+            "@src/*": [
+                "./*"
+            ]
+        },
+        "outDir": "./build"
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "commonjs"
+        }
+    }
+}
