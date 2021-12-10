@@ -1,14 +1,14 @@
 {
   "name": "jest-sandbox",
   "version": "1.0.0",
-  "description": "",
+  "description": "TypeScript inheritance probably bug",
   "scripts": {
     "test": "jest",
     "build": "tsc",
     "start": "node ./build/myFun.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["typescript", "inheritance"],
+  "author": "TomSssM",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "26.0.14",

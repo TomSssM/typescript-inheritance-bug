@@ -1,13 +1,14 @@
-import { MyError } from './errors';
+class MyError extends Error {
+  public SUPER_NAME: string;
+  constructor(message: string) {
+    super(message);
+    this.SUPER_NAME = 'TOM';
+  }
+}
 
 export function myFun() {
-    try {
-        throw new MyError('test 1');
-    } catch (e) {
-        console.log('e instanceof MyError:');
-        console.log(e instanceof MyError);
-        return e instanceof MyError;
-    }
+    const e = new MyError('test');
+    console.log(e instanceof MyError);
 }
 
 if (require.main === module) {

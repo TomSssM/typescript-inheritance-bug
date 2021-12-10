@@ -1,41 +1,17 @@
 {
     "compilerOptions": {
         "strict": true,
-        "module": "CommonJS",
         "sourceMap": true,
+        "declaration": true,
         "declarationMap": true,
-        "typeRoots": [
-            "./node_modules/@types"
-        ],
+        "module": "CommonJS",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "forceConsistentCasingInFileNames": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "noImplicitAny": true,
-        "strictNullChecks": true,
-        "suppressImplicitAnyIndexErrors": true,
         "noUnusedLocals": true,
         "esModuleInterop": true,
-        "downlevelIteration": true,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "allowSyntheticDefaultImports": true,
         "skipLibCheck": true,
-        "declaration": true,
         "baseUrl": ".",
-        "jsx": "react",
-        "paths": {
-            "@src/*": [
-                "./*"
-            ]
-        },
         "outDir": "./build"
     },
-    "include": ["myFun.ts", "errors.ts"],
-    "ts-node": {
-        "compilerOptions": {
-            "module": "commonjs"
-        }
-    }
+    "include": ["myFun.ts"]
 }
