@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "strict": true,
-        "module": "esnext",
+        "module": "CommonJS",
         "sourceMap": true,
         "declarationMap": true,
         "typeRoots": [
@@ -32,6 +32,7 @@
         },
         "outDir": "./build"
     },
+    "include": ["myFun.ts", "errors.ts"],
     "ts-node": {
         "compilerOptions": {
             "module": "commonjs"

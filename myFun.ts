@@ -1,6 +1,6 @@
 import { MyError } from './errors';
 
-export async function myFun() {
+export function myFun() {
     try {
         throw new MyError('test 1');
     } catch (e) {
@@ -8,4 +8,8 @@ export async function myFun() {
         console.log(e instanceof MyError);
         return e instanceof MyError;
     }
+}
+
+if (require.main === module) {
+    myFun();
 }
